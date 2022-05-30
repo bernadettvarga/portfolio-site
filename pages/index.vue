@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div class="flex flex-col w-full h-full">
     <Menu/>
-    <Tutorial/>
+    <div class="flex-1 bg-gray-200">.</div>
   </div>
 </template>
 
