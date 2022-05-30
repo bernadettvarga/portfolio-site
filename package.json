@@ -16,8 +16,17 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^4.2.1",
     "autoprefixer": "^10.3.1",
+    "eslint": "^8.16.0",
+    "eslint-plugin-tailwindcss": "^2.0.1",
     "postcss": "^8.3.6",
     "push-dir": "^0.4.1",
     "tailwindcss": "^2.2.7"
+  },
+  "eslintConfig": {
+    "root": true,
+    "plugins": ["tailwindcss"],
+    "extends": [
+      "plugin:tailwindcss/recommended"
+    ]
   }
 }
