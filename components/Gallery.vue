@@ -22,12 +22,19 @@
     <div class="flex-shrink-0">
       <img src="~/assets/img/overview/sb-1.jpg" class="gallery-image__landscape" />
     </div>
+    <!--TODO: add animation-->
+    <div v-if="showScrollHint" class="fixed top-1/2 right-0 opacity-80">
+      <ChevronRightIcon fillColor="#FEFEFE" :size="48" />
+    </div>
   </div>
 </template>
 
 <script>
+import ChevronRightIcon from 'vue-material-design-icons/ChevronRight.vue'
+
 export default {
   name: 'Gallery',
+  components: { ChevronRightIcon },
   props: {
     title: {
       type: String,
@@ -38,5 +45,21 @@ export default {
       default: '',
     },
   },
+  data() {
+    return {
+      showScrollHint: true,
+    }
+  },
+  mounted() {
+    this.listenToScroll()
+  },
+  methods: {
+    listenToScroll() {
+      window.addEventListener('scroll', this.hideScrollHint, true)
+    },
+    hideScrollHint() {
+      this.showScrollHint = false
+    },
+  }
 }
 </script>
