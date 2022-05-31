@@ -1,7 +1,7 @@
 <template>
-  <div class="p-6 md:pt-0 flex flex-1 items-stretch space-x-4">
+  <div class="p-4 md:p-6 md:pt-0 flex flex-col md:flex-row flex-1 items-stretch space-y-4 md:space-y-0 md:space-x-4">
     <template v-if="title || description">
-      <div class="w-72 self-end flex-shrink-0">
+      <div class="w-full md:w-72 md:self-end flex-shrink-0">
         <template v-if="title">
           <h1 class="text-5xl">{{ title }}</h1>
         </template>
@@ -16,7 +16,7 @@
     </div>
 
     <!--TODO: add animation-->
-    <div v-if="showScrollHint" class="fixed top-1/2 right-0 opacity-80">
+    <div v-if="showScrollHint" class="hidden md:block fixed top-1/2 right-0 opacity-80">
       <ChevronRightIcon fillColor="#FEFEFE" :size="48" />
     </div>
   </div>
