@@ -10,18 +10,11 @@
         </template>
       </div>
     </template>
-    <div class="flex-shrink-0">
-      <img src="~/assets/img/overview/te-3.jpg" class="gallery-image__portrait" />
+
+    <div class="flex-shrink-0" v-for="item in content.items" :key="item.src">
+      <img :src="require(`~/assets/img/${content.folder}/${item.src}.jpg`)" :class="`gallery-image__${item.type}`" />
     </div>
-    <div class="flex-shrink-0">
-      <img src="~/assets/img/overview/mad-prod-2.jpg" class="gallery-image__portrait" />
-    </div>
-    <div class="flex-shrink-0">
-      <img src="~/assets/img/overview/enroute-french-2-2.jpg" class="gallery-image__portrait" />
-    </div>
-    <div class="flex-shrink-0">
-      <img src="~/assets/img/overview/sb-1.jpg" class="gallery-image__landscape" />
-    </div>
+
     <!--TODO: add animation-->
     <div v-if="showScrollHint" class="fixed top-1/2 right-0 opacity-80">
       <ChevronRightIcon fillColor="#FEFEFE" :size="48" />
@@ -43,6 +36,10 @@ export default {
     description: {
       type: String,
       default: '',
+    },
+    content: {
+      type: Object,
+      required: true,
     },
   },
   data() {
