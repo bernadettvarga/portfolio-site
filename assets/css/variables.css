@@ -1,4 +1,7 @@
 :root {
   --menu-height: 64px;
   --menu-height-md: 84px;
+  --portrait-ratio: 4000 / 6016;
+  --landscape-ratio: 6016 / 4000;
+  --gallery-padding-vertical: 24px;
 }

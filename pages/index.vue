@@ -1,6 +1,13 @@
 <template>
+  <Gallery />
 </template>
 
 <script>
-export default {}
+import Gallery from '@/components/Gallery'
+
+export default {
+  components: {
+    Gallery,
+  }
+}
 </script>
