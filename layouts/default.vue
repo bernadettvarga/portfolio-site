@@ -1,7 +1,7 @@
 <template>
   <div class="flex flex-col w-full min-h-screen">
-    <Menu/>
-    <div class="flex-1">
+    <Menu />
+    <div id="main" class="flex flex-1 bg-light">
       <Nuxt />
     </div>
   </div>
