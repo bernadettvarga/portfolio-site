@@ -19,3 +19,14 @@
     width: calc((100vh - var(--menu-height-md) - var(--gallery-padding-vertical)) * var(--landscape-ratio));
   }
 }
+
+/* LAZY LOADING */
+
+.isLoading {
+  opacity: 0;
+}
+
+.isLoaded {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+}
