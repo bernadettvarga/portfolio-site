@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed flex w-full bg-light shadow-sm">
+  <div class="fixed flex w-full bg-light shadow-sm md:shadow-none">
     <div class="flex flex-grow items-center p-4 md:p-6">
       <NuxtLink to="/">
         <h1 class="text-2xl md:text-3xl hover:opacity-80 whitespace-nowrap">Bernadett Varga</h1>

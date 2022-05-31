@@ -10,12 +10,12 @@
 
 @media screen and (min-width: 768px) {
   .gallery-image__portrait {
-    height: calc(100vh - var(--menu-height-md) - 2 * var(--gallery-padding-vertical));
-    width: calc((100vh - var(--menu-height-md) - 2 * var(--gallery-padding-vertical)) * var(--portrait-ratio));
+    height: calc(100vh - var(--menu-height-md) - var(--gallery-padding-vertical));
+    width: calc((100vh - var(--menu-height-md) - var(--gallery-padding-vertical)) * var(--portrait-ratio));
   }
 
   .gallery-image__landscape {
-    height: calc(100vh - var(--menu-height-md) - 2 * var(--gallery-padding-vertical));
-    width: calc((100vh - var(--menu-height-md) - 2 * var(--gallery-padding-vertical)) * var(--landscape-ratio));
+    height: calc(100vh - var(--menu-height-md) - var(--gallery-padding-vertical));
+    width: calc((100vh - var(--menu-height-md) - var(--gallery-padding-vertical)) * var(--landscape-ratio));
   }
 }
