@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col w-full min-h-screen">
+  <div class="flex flex-col w-full min-h-screen overflow-hidden">
     <Menu />
-    <div id="main" class="flex flex-1 bg-light">
+    <div id="main" class="flex flex-1 bg-light overflow-scroll">
       <Nuxt />
     </div>
   </div>
