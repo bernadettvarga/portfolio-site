@@ -1,14 +1,22 @@
-.gallery-image__portrait, .gallery-image__landscape {
+.gallery-image {
   max-width: 100%;
 }
 
+.gallery-image__button {
+  @apply w-0 invisible absolute inset-x-0 bottom-0 btn btn-dark opacity-80 flex items-center justify-center  whitespace-nowrap transition-all ease-in duration-300;
+}
+
+.gallery-image:hover ~ .gallery-image__button  {
+  @apply w-full visible ease-out duration-700;
+}
+
 @media screen and (min-width: 768px) {
-  .gallery-image__portrait {
+  .gallery-image--portrait {
     height: calc(100vh - var(--menu-height-md) - var(--gallery-padding-vertical));
     width: calc((100vh - var(--menu-height-md) - var(--gallery-padding-vertical)) * var(--portrait-ratio));
   }
 
-  .gallery-image__landscape {
+  .gallery-image--landscape {
     height: calc(100vh - var(--menu-height-md) - var(--gallery-padding-vertical));
     width: calc((100vh - var(--menu-height-md) - var(--gallery-padding-vertical)) * var(--landscape-ratio));
   }
