@@ -6,6 +6,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Layout */
+
 #main {
   margin-top: var(--menu-height);
 }
@@ -18,4 +20,15 @@
   #main {
     margin-top: var(--menu-height-md);
   }
+}
+
+/* Transition between routes */
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.4s;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
 }
