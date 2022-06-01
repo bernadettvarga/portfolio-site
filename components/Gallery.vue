@@ -11,8 +11,27 @@
       </div>
     </template>
 
-    <div class="flex-shrink-0" v-for="item in content.items" :key="item.src">
-      <img :src="require(`~/assets/img/${content.folder}/${item.src}.jpg`)" :class="`gallery-image__${item.type}`" />
+    <div class="flex-shrink-0 relative" v-for="item in content.items" :key="item.src">
+      <template v-if="item.projectSlug">
+        <NuxtLink :to="`/projects/${item.projectSlug}`">
+          <img
+            :src="require(`~/assets/img/${content.folder}/${item.src}.jpg`)"
+            :class="`gallery-image gallery-image--${item.type}`"
+          />
+
+          <div class="gallery-image__button">
+            See more
+            <ArrowRight fillColor="#FEFEFE" :size="18" class="ml-3" />
+          </div>
+        </NuxtLink>
+      </template>
+
+      <template v-else>
+        <img
+          :src="require(`~/assets/img/${content.folder}/${item.src}.jpg`)"
+          :class="`gallery-image gallery-image--${item.type}`"
+          />
+      </template>
     </div>
 
     <!--TODO: add animation-->
@@ -24,10 +43,11 @@
 
 <script>
 import ChevronRightIcon from 'vue-material-design-icons/ChevronRight.vue'
+import ArrowRight from 'vue-material-design-icons/ArrowRight.vue'
 
 export default {
   name: 'Gallery',
-  components: { ChevronRightIcon },
+  components: { ChevronRightIcon, ArrowRight },
   props: {
     title: {
       type: String,
@@ -57,6 +77,6 @@ export default {
     hideScrollHint() {
       this.showScrollHint = false
     },
-  }
+  },
 }
 </script>

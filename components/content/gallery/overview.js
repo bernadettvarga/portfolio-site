@@ -4,6 +4,7 @@ export default {
     {
       src: 'te-3',
       type: 'portrait',
+      projectSlug: 'toth-eszter',
     },
     {
       src: 'mad-prod-2',
@@ -12,6 +13,7 @@ export default {
     {
       src: 'enroute-french-2-2',
       type: 'portrait',
+      projectSlug: 'en-route-french-style',
     },
     {
       src: 'sb-1',
