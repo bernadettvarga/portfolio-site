@@ -14,10 +14,7 @@
     <div class="flex-shrink-0 relative" v-for="item in content.items" :key="item.src">
       <template v-if="item.projectSlug">
         <NuxtLink :to="`/projects/${item.projectSlug}`">
-          <img
-            :src="require(`~/assets/img/${content.folder}/${item.src}.jpg`)"
-            :class="`gallery-image gallery-image--${item.type}`"
-          />
+          <GalleryImage :folder="content.folder" :item="item" />
 
           <div class="gallery-image__button">
             See more
@@ -27,10 +24,7 @@
       </template>
 
       <template v-else>
-        <img
-          :src="require(`~/assets/img/${content.folder}/${item.src}.jpg`)"
-          :class="`gallery-image gallery-image--${item.type}`"
-          />
+        <GalleryImage :folder="content.folder" :item="item" />
       </template>
     </div>
 
@@ -44,10 +38,11 @@
 <script>
 import ChevronRightIcon from 'vue-material-design-icons/ChevronRight.vue'
 import ArrowRight from 'vue-material-design-icons/ArrowRight.vue'
+import GalleryImage from '@/components/GalleryImage.vue'
 
 export default {
   name: 'Gallery',
-  components: { ChevronRightIcon, ArrowRight },
+  components: { ChevronRightIcon, ArrowRight, GalleryImage },
   props: {
     title: {
       type: String,

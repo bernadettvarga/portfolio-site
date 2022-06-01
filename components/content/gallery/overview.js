@@ -4,6 +4,7 @@ export default {
     {
       src: 'te-3',
       type: 'portrait',
+      alt: 'Tóth Eszter divat portré',
       projectSlug: 'toth-eszter',
     },
     {
