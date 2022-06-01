@@ -17,6 +17,7 @@
           <img
             :src="require(`~/assets/img/${content.folder}/${item.src}.jpg`)"
             :class="`gallery-image gallery-image--${item.type}`"
+            :alt="`Bernadett Varga Photography ${item.alt || ''}`"
           />
 
           <div class="gallery-image__button">
@@ -30,6 +31,7 @@
         <img
           :src="require(`~/assets/img/${content.folder}/${item.src}.jpg`)"
           :class="`gallery-image gallery-image--${item.type}`"
+          :alt="`Bernadett Varga Photography ${item.alt || ''}`"
           />
       </template>
     </div>
