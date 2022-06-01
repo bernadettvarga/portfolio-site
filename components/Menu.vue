@@ -1,8 +1,8 @@
 <template>
-  <div class="flex w-full text-dark bg-light shadow-sm">
-    <div class="flex flex-grow items-center p-6 z-10">
+  <div class="fixed flex w-full bg-light shadow-sm md:shadow-none">
+    <div class="flex flex-grow items-center p-4 md:p-6">
       <NuxtLink to="/">
-        <h1 class="text-xl md:text-3xl hover:opacity-80">Bernadett Varga</h1>
+        <h1 class="text-2xl md:text-3xl hover:opacity-80 whitespace-nowrap">Bernadett Varga</h1>
       </NuxtLink>
       <p class="hidden md:block pl-4 mt-2 ml-4 text-sm tracking-widest uppercase border-l border-dark border-opacity-30 opacity-50 cursor-default">
         photographer
@@ -25,12 +25,12 @@
         </NuxtLink>
       </nav>
     </div>
-    <div @click="toggleMenu" class="md:hidden p-6 cursor-pointer z-10">
+    <div @click="toggleMenu" class="md:hidden p-4 md:p-6 cursor-pointer flex items-center">
       <MenuIcon v-if="!show" fillColor="#363636" />
       <CloseIcon v-else fillColor="#363636" />
     </div>
-    <div v-if="show" class="fixed inset-0 bg-light bg-opacity-50">
-      <nav class="flex flex-col p-6 pt-24 space-y-1 text-xl">
+    <div v-if="show" class="fixed inset-0 bg-light bg-opacity-80 mobile-menu">
+      <nav class="flex flex-col p-6 space-y-1 text-xl">
         <NuxtLink to="/fashion" class="p-2 hover:opacity-70">
           Fashion
         </NuxtLink>
