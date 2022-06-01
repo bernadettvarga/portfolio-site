@@ -6,7 +6,8 @@
   @apply w-0 invisible absolute inset-x-0 bottom-0 btn btn-dark opacity-80 flex items-center justify-center  whitespace-nowrap transition-all ease-in duration-300;
 }
 
-.gallery-image:hover ~ .gallery-image__button  {
+.gallery-image:hover ~ .gallery-image__button,
+.gallery-image__button:hover  {
   @apply w-full visible ease-out duration-700;
 }
 
