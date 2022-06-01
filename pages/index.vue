@@ -7,6 +7,7 @@ import Gallery from '@/components/Gallery'
 import contentObj from '@/components/content/gallery/overview.js'
 
 export default {
+  name: 'Index',
   components: {
     Gallery,
   },
