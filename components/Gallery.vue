@@ -1,5 +1,5 @@
 <template>
-  <div class="p-4 md:p-6 md:pt-0 flex flex-col md:flex-row flex-1 items-stretch space-y-4 md:space-y-0 md:space-x-4 overflow-x-scroll">
+  <div class="p-4 md:p-6 md:pt-0 md:pr-0 flex flex-col md:flex-row flex-1 items-stretch space-y-4 md:space-y-0 md:space-x-4 overflow-x-scroll">
     <template v-if="title || description">
       <div class="w-full md:w-72 md:self-end flex-shrink-0">
         <template v-if="title">
