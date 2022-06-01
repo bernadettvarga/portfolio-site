@@ -22,6 +22,15 @@
   }
 }
 
+/* Buttons */
+.btn {
+  @apply p-3 text-center text-sm uppercase tracking-widest font-medium;
+}
+
+.btn-dark {
+  @apply bg-dark text-light;
+}
+
 /* Transition between routes */
 
 .page-enter-active,
