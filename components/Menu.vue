@@ -14,6 +14,9 @@
         <NuxtLink to="/portrait" class="hover:opacity-70">
           Portrait
         </NuxtLink>
+        <NuxtLink to="/product" class="hover:opacity-70">
+          Product
+        </NuxtLink>
         <NuxtLink to="/projects" class="hover:opacity-70">
           Projects
         </NuxtLink>
@@ -36,6 +39,9 @@
         </NuxtLink>
         <NuxtLink to="/portrait" class="p-2 hover:opacity-70">
           Portrait
+        </NuxtLink>
+        <NuxtLink to="/product" class="hover:opacity-70">
+          Product
         </NuxtLink>
         <NuxtLink to="/projects" class="p-2 hover:opacity-70">
           Projects
