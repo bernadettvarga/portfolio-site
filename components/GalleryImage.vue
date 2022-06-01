@@ -1,6 +1,6 @@
 <template>
   <img
-    :src="require(`~/assets/img/${folder}/${item.src}.jpg`)"
+    :src="require(`~/assets/img/${item.src}.jpg`)"
     :class="`gallery-image gallery-image--${item.type}`"
     :alt="`Bernadett Varga Photography ${item.alt || ''}`"
   />
@@ -10,10 +10,6 @@
 export default {
   name: 'GalleryImage',
   props: {
-    folder: {
-      type: String,
-      required: true,
-    },
     item: {
       type: Object,
       required: true,

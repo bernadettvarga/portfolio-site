@@ -11,10 +11,10 @@
       </div>
     </template>
 
-    <div class="flex-shrink-0 relative" v-for="item in content.items" :key="item.src">
+    <div class="flex-shrink-0 relative" v-for="item in content" :key="item.src">
       <template v-if="item.projectSlug">
         <NuxtLink :to="`/projects/${item.projectSlug}`">
-          <GalleryImage :folder="content.folder" :item="item" />
+          <GalleryImage :item="item" />
 
           <div class="gallery-image__button">
             See more
@@ -24,7 +24,7 @@
       </template>
 
       <template v-else>
-        <GalleryImage :folder="content.folder" :item="item" />
+        <GalleryImage :item="item" />
       </template>
     </div>
 
@@ -53,7 +53,7 @@ export default {
       default: '',
     },
     content: {
-      type: Object,
+      type: Array,
       required: true,
     },
   },
