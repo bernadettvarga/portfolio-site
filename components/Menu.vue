@@ -1,10 +1,10 @@
 <template>
-  <div class="fixed flex w-full bg-light shadow-sm md:shadow-none">
+  <div class="fixed flex w-full bg-light shadow-sm md:shadow-none z-10">
     <div class="flex flex-grow items-center p-4 md:p-6">
       <NuxtLink to="/">
         <h1 class="text-2xl md:text-3xl hover:opacity-80 whitespace-nowrap">Bernadett Varga</h1>
       </NuxtLink>
-      <p class="hidden md:block pl-4 mt-2 ml-4 text-sm tracking-widest uppercase border-l border-dark border-opacity-30 opacity-50 cursor-default">
+      <p class="hidden lg:block pl-4 mt-2 ml-4 text-sm tracking-widest uppercase border-l border-dark border-opacity-30 opacity-50 cursor-default">
         photographer
       </p>
       <nav class="hidden md:flex flex-grow justify-end ml-4 space-x-4">
