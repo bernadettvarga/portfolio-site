@@ -11,7 +11,7 @@
         </div>
       </div>
       <div class="project project--portrait" lazy-background="~assets/img/overview/mad-prod-2.jpg"></div>
-      <div class="project--intro">
+      <div class="hidden md:block project--intro">
         <div class="md:absolute md:inset-0 flex items-end">
           <div class="pt-5 md:pt-0 md:pl-10 md:pb-10">
             <h1 class="text-3xl md:text-4xl">Projects</h1>

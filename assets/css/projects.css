@@ -20,7 +20,8 @@
 }
 
 .project--intro {
-  @apply relative col-span-2 md:col-span-1;
+  @apply relative;
+  padding-bottom: 100%;
 }
 
 .project__overlay {
@@ -34,10 +35,4 @@
 .project__overlay__details__separator {
   @apply border-t border-dark w-0 my-2 ease-out duration-500;
   transition-property: width;
-}
-
-@media screen and (min-width: 768px) {
-  .project--intro {
-    padding-bottom: 100%;
-  }
 }
