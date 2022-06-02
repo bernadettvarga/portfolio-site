@@ -1,0 +1,22 @@
+.project {
+  @apply bg-cover bg-center;
+}
+
+.project--portrait {
+  padding-bottom: 100%;
+}
+
+.project--landscape {
+  @apply col-span-2;
+  padding-bottom: 50%;
+}
+
+.project--intro {
+  @apply relative col-span-2 md:col-span-1;
+}
+
+@media screen and (min-width: 768px) {
+  .project--intro {
+    padding-bottom: 100%;
+  }
+}
