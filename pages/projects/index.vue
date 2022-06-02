@@ -1,7 +1,15 @@
 <template>
   <div class="overflow-y-scroll w-full p-4 md:p-6 md:pt-0">
     <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
-      <div class="project project--portrait" lazy-background="~assets/img/overview/te-3.jpg"></div>
+      <div class="project project--portrait" lazy-background="~assets/img/overview/te-3.jpg">
+        <div class="project__overlay">
+          <div class="project__overlay__details">
+            <p class="font-display text-5xl">Eszter Tóth</p>
+            <div class="project__overlay__details__separator"></div>
+            <p class="uppercase tracking-widest">fashion portraits</p>
+          </div>
+        </div>
+      </div>
       <div class="project project--portrait" lazy-background="~assets/img/overview/mad-prod-2.jpg"></div>
       <div class="project--intro">
         <div class="md:absolute md:inset-0 flex items-end">
