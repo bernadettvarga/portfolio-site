@@ -4,11 +4,11 @@
       <div
         v-for="(project, index) in projects"
         :key="project.index"
-        :class="project.img ? `project project--${project.img.type}`: ''"
+        :class="project.type === 'intro' ? 'hidden md:block' : `project project--${project.img.type}`"
         :lazy-background="project.img ? require(`~/assets/img/${project.img.src}`) : ''"
       >
         <template v-if="project.type === 'intro'">
-          <div class="hidden md:block project--intro">
+          <div class="project--intro">
             <div class="md:absolute md:inset-0 flex items-end">
               <div class="pt-5 md:pt-0 md:pl-10 md:pb-10">
                 <h1 class="text-3xl md:text-4xl">{{ project.title }}</h1>
