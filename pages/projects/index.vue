@@ -1,6 +1,6 @@
 <template>
   <div class="overflow-y-scroll w-full p-4 md:p-6 md:pt-0">
-    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
       <div
         v-for="(project, index) in projects"
         :key="project.index"
@@ -21,10 +21,10 @@
           <NuxtLink :to="`/projects/${project.slug}`">
             <div class="project__overlay">
               <div class="project__overlay__details">
-                <p v-if="project.title" class="font-display text-5xl">{{ project.title }}</p>
+                <p v-if="project.title" class="project__overlay__details__title">{{ project.title }}</p>
                 <template v-if="project.subtitle">
                   <div class="project__overlay__details__separator"></div>
-                  <p class="uppercase tracking-widest">{{ project.subtitle }}</p>
+                  <p class="project__overlay__details__subtitle">{{ project.subtitle }}</p>
                 </template>
               </div>
             </div>
