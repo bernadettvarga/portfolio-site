@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/en-route-french-style", {data:[{slug:"en-route-french-style"}],fetch:{},mutations:void 0});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/projects/somody-betty", {data:[{slug:"somody-betty"}],fetch:{},mutations:void 0});
